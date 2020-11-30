@@ -8,6 +8,9 @@
     "test:watch": "jest --watch"
   },
   "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
@@ -24,6 +27,7 @@
   "devDependencies": {
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.1",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "react-dom": "^17.0.1",

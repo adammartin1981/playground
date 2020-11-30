@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App2 should do the snapshot 1`] = `
+<Fragment>
+  Foo
+</Fragment>
+`;

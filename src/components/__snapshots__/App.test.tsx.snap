@@ -1,7 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should do snapshots 1`] = `ShallowWrapper {}`;
+exports[`App should do snapshots 1`] = `
+<div
+  className="foo"
+/>
+`;
 
-exports[`App should do wallaby snapshot 1`] = `ShallowWrapper {}`;
+exports[`App should do wallaby snapshot 1`] = `
+<div
+  className="foo"
+/>
+`;
 
-exports[`App should do wallaby snapshot 2`] = `ShallowWrapper {}`;
+exports[`App should do wallaby snapshot 2`] = `
+<div
+  className="foo"
+/>
+`;

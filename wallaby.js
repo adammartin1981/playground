@@ -6,7 +6,7 @@ module.exports = function (wallaby) {
       '!src/**/*.test.ts*',
     ],
 
-    tests: ['src/**/*.test.ts*'],
+    tests: ['src/**/*.test.ts*', '!src/**/*.snap'],
 
     compilers: {
       '**/*.ts?(x)': wallaby.compilers.typeScript({
@@ -21,6 +21,7 @@ module.exports = function (wallaby) {
 
     testFramework: 'jest',
 
+    // This may not be required if the snapshots aren't being generated
     setup: function (w) {
       const fs = require('fs')
       const path = require('path')
