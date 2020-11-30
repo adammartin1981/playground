@@ -14,4 +14,12 @@ describe('App', () => {
   it('should do snapshots', () => {
     expect(app).toMatchSnapshot()
   })
+
+  it('should do wallaby snapshot', () => {
+    const app2 = shallow(<App />)
+    const app3 = shallow(<App />)
+
+    expect(app2).toMatchSnapshot()
+    expect(app3).toMatchSnapshot()
+  })
 })
