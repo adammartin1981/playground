@@ -1,5 +1,27 @@
 import * as React from 'react'
 
+const GiftsDisplay = ({ gifts }: { gifts: string[] }) => (
+  <>
+    {gifts.map((gift) => {
+      return <div data-testid="gift">Gift</div>
+    })}
+  </>
+)
+
 export const App = () => {
-  return <div className="foo"></div>
+  const [gifts, setGifts] = React.useState<string[]>([])
+
+  const addGifts = () => {
+    setGifts([...gifts, 'New Gift'])
+  }
+
+  return (
+    <div className="app">
+      <GiftsDisplay gifts={gifts} />
+
+      <button data-testid="addGift" onClick={addGifts}>
+        Add Gifts
+      </button>
+    </div>
+  )
 }

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "test-utils": ["../test/test-utils"]
+    }
   }
 }
