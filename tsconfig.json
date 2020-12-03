@@ -3,8 +3,7 @@
     "jsx": "react",
     "outDir": "dist",
     "baseUrl": "./src",
-    "paths": {
-      "test-utils": ["../test/test-utils"]
-    }
+    "esModuleInterop": true,
+    "paths": {}
   }
 }

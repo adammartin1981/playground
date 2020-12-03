@@ -11,12 +11,11 @@ const GiftsDisplay = ({ gifts }: { gifts: string[] }) => (
 export const App = () => {
   const [gifts, setGifts] = React.useState<string[]>([])
 
-  const addGifts = () => {
-    setGifts([...gifts, 'New Gift'])
-  }
+  const addGifts = () => setGifts([...gifts, 'New Gift'])
 
   return (
     <div className="app">
+      <div>Hello</div>
       <GiftsDisplay gifts={gifts} />
 
       <button data-testid="addGift" onClick={addGifts}>

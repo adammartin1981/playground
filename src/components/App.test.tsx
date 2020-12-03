@@ -2,7 +2,7 @@ import { App } from './App'
 import * as React from 'react'
 
 import { shallow, configure } from 'enzyme'
-import * as Adapter from 'enzyme-adapter-react-16'
+import Adapter from 'enzyme-adapter-react-16'
 import { fireEvent, render, screen } from '@testing-library/react'
 
 configure({ adapter: new Adapter() })
